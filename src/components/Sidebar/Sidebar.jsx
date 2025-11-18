@@ -6,7 +6,7 @@ import { Context } from "../../context/Context";
 const Sidebar = () => {
   const [extended, setExtended] = useState(false);
 
-  const { onSent, setRecentPrompt, previousPrompts } = useContext(Context);
+  const { onSent, setRecentPrompt, previousPrompts,newChat } = useContext(Context);
 
   const loadPrompt = async (prompt) => {
     await setRecentPrompt(prompt);
@@ -24,7 +24,7 @@ const Sidebar = () => {
         />
 
         <div className="new-chat">
-          <img className="plus" src={assets.plus_icon} alt="" />
+          <img onClick={()=> newChat()}className="plus" src={assets.plus_icon} alt="" />
           {extended ? <p>New Chat</p> : null}
         </div>
 
