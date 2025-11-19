@@ -68,10 +68,6 @@ gemini-clone/
 
 Pull requests are welcome! Please open an issue first to discuss your proposed changes. For major changes, please open an issue to propose your ideas.
 
-## License
-
-This project is licensed under the MIT License.
-
 ---
 
 Built with ❤️ by [Kirushnabalan](https://github.com/Kirushnabalan)
